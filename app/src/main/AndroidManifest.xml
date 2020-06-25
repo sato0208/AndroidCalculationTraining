@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TestActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape">
+<!--            起動時にどこの画面を表示するか決める-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
