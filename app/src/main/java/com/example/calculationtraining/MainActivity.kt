@@ -19,9 +19,13 @@ class MainActivity : AppCompatActivity() {
 
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.number_of_question,android.R.layout.simple_spinner_item)
         spinner.adapter = arrayAdapter
-        button.setOnClickListener {
-//    Todo 「スタート」ボタンを押したら
-//    Todo １． テスト画面を開く(Spinnerから選んだ問題数を渡す）
+        val onClickListener: Any = button.setOnClickListener {
+//      「スタート」ボタンを押したら
+
+//            選択したアイテムをゲットする
+            val numberOfQuestion = spinner.selectedItem
+            //       Todo １． テスト画面を開く(Spinnerから選んだ問題数を渡す）
+            val intent = Intent(this.@ MainActivity, TestActivity::class.java)
         }
     }
 }
