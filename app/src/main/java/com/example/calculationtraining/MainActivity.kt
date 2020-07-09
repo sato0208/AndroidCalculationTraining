@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity() {
 //      「スタート」ボタンを押したら
 
 //            選択したアイテムをゲットする
-            val numberOfQuestion = spinner.selectedItem
+            val numberOfQuestion: Int = spinner.selectedItem.toString().toInt()
             //       Todo １． テスト画面を開く(Spinnerから選んだ問題数を渡す）
             val intent = Intent(this.@ MainActivity, TestActivity::class.java)
+            intent.putExtra("numberOfQuestion",numberOfQuestion)
+            startActivity(intent)
         }
     }
 }
