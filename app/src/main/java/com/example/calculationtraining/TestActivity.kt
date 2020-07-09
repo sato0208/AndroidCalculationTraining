@@ -14,6 +14,10 @@ class TestActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
         //Todo テスト画面が開いたら
+//        Todo １．前の問題から渡された問題数を画面に表示させる
+        val bundle: = intent.extras
+        val numberOfQuestion = bundle.getInt("numberOfQuestion")
+        textViewRemaining.text = numberOfQuestion.toString()
 
         //Todo 「こたえ合わせ」ボタンが押されたら
         buttonCheck.setOnClickListener {  }
