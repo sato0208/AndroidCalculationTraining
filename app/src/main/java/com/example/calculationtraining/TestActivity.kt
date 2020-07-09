@@ -13,8 +13,8 @@ class TestActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
-        //Todo テスト画面が開いたら
-//        Todo １．前の問題から渡された問題数を画面に表示させる
+        //テスト画面が開いたら
+//        １．前の問題から渡された問題数を画面に表示させる
         val bundle: = intent.extras
         val numberOfQuestion = bundle.getInt("numberOfQuestion")
         textViewRemaining.text = numberOfQuestion.toString()
@@ -48,6 +48,13 @@ class TestActivity : AppCompatActivity(), View.OnClickListener {
     //    問題を処理するメソッド
 
     private fun question() {
+//        Todo １．「もどる」ボタンを使えなくする
+//        Todo ２．「こたえ合わせ」ボタンと電卓ボタンを使えるようにする
+//        Todo ３．問題の２つの数字を１~100からランダムに設定して表示
+//        Todo ４．計算方法を「+」「-」からランダムに設定して表示
+//        Todo ５．前の問題で入力した自分のこたえを消す
+//        Todo ６．〇・×画像を見えないようにする
+//
         TODO("Not yet implemented")
     }
     //Todo こたえあわせ処理（answerCheckメソッド）
