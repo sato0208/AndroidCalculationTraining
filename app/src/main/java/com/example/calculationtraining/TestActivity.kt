@@ -3,10 +3,9 @@ package com.example.calculationtraining
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_test.*
-
-
-
+import kotlinx.android.synthetic.main.activity_test.buttonCheck
 
 
 class TestActivity : AppCompatActivity(), View.OnClickListener {
@@ -49,7 +48,23 @@ class TestActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun question() {
 //        Todo １．「もどる」ボタンを使えなくする
+        buttonBack.isEnabled = false
 //        Todo ２．「こたえ合わせ」ボタンと電卓ボタンを使えるようにする
+        buttonCheck.isEnabled = true
+        button0.isEnabled = true
+        button1.isEnabled = true
+        button2.isEnabled = true
+        button3.isEnabled = true
+        button4.isEnabled = true
+        button5.isEnabled = true
+        button6.isEnabled = true
+        button7.isEnabled = true
+        button8.isEnabled = true
+        button9.isEnabled = true
+        buttonMinus.isEnabled = true
+        buttonC.isEnabled = true
+
+
 //        Todo ３．問題の２つの数字を１~100からランダムに設定して表示
 //        Todo ４．計算方法を「+」「-」からランダムに設定して表示
 //        Todo ５．前の問題で入力した自分のこたえを消す
